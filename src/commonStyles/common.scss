@@ -1,0 +1,13 @@
+@mixin button-type1(){
+  border:1px solid $color-blue;
+  border-radius: 3px;
+  color: $color-blue;
+  
+}
+
+@mixin button-type2() {
+  border:1px solid $color-blue;
+  border-radius: 3px;
+  color:$color-white;
+  background: $color-blue;
+}

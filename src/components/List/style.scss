@@ -1,0 +1,66 @@
+@import "../../commonStyles/common.scss";
+@import "../../commonStyles/constants.scss";
+@import url('http://fonts.cdnfonts.com/css/quicksand');
+
+                
+.page-container{
+  color:$text-gray;
+
+  .page-content{
+    max-width: 1000px;
+    margin: auto;
+    
+
+   .page-header{
+      display: flex;
+      align-items: center;
+      padding: 10px 0px;
+      border-bottom: 1px solid $border-gray;
+      margin-bottom: 30px;
+      position: sticky;
+      top: 0;
+      background-color: #FFCC33;
+      z-index: 1;
+    
+    .page-title{
+      justify-self: flex-start;
+      font-size: 20px;
+      color: #000000;
+      font-family: Montserrat;
+      font-weight: 500;
+      font-style: mixed;
+      line-height: 24px;
+      fill: solid;
+      margin-left: 2%;
+     }
+
+     button{
+      @include button-type2();
+      
+      border-radius: 99px;
+      background-color: black;
+      margin-right: 2%;
+      margin-left: 22%;
+      height: 30px;
+      font-size: 16px;
+      font-family: Montserrat;
+      font-weight: 300;
+     }
+
+   }
+   .cart-items{
+     display: grid;
+     grid-gap: 20px;
+     grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+     place-items: center;
+     font-family: Montserrat;
+   } 
+   .body-title {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: bold;
+    justify-self: flex-start;
+    color: black;
+  }
+  }
+}
